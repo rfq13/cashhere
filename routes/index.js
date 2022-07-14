@@ -25,15 +25,6 @@ router.get(
   },
   render
 );
-router.get("/headers", function (req, res) {
-  res.csv(
-    [
-      { a: 1, b: 2, c: 3 },
-      { a: 4, b: 5, c: 6 },
-    ],
-    true
-  );
-});
 router.use("/auth", require("./auth"), render);
 router.use("/company", authenticated, require("./company"), render);
 router.use("/transaction", authenticated, require("./transaction"), render);
