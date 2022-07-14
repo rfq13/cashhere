@@ -20,7 +20,7 @@ router.get(
     }
 
     req.view = "home";
-    req.renderData = { kindOfDay: day, title: "kuntol" };
+    req.renderData = { kindOfDay: day, title: "Welcome" };
     next();
   },
   render
