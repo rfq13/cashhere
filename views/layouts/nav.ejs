@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+  <a class="navbar-brand" href="/">Cash-Here <small style="font-size: 12px;">*this is logo :)</small></a> 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      
+    </ul>
+    <% if(!isLogin){ %>
+    <!-- <a href="/auth/login" class="btn btn-sm btn-outline-info float-right">Login</a> -->
+    <% }else{ %>
+      <a href="/auth/logout" class="btn btn-sm btn-outline-danger float-right">Logout</a>
+    <% } %>
+  </div>
+</nav>
